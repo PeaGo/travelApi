@@ -4,6 +4,7 @@
         "slim/psr7": "^0.4.0",
         "joomla/database": "1.6",
         "illuminate/support": "^5.8",
-        "illuminate/database": "^5.8"
+        "illuminate/database": "^5.8",		
+        "joomla/application": "^1.9"
     }
 }
