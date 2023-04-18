@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f49d7fbcc4cb6c476f2169cb90f3944d",
+    "content-hash": "5e1bce0f783fa2ed2522bb919caafea0",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -75,21 +75,23 @@
         },
         {
             "name": "fig/http-message-util",
-            "version": "1.1.3",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message-util.git",
-                "reference": "35b19404371b31b3a43823c755398c48c9966db4"
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message-util/zipball/35b19404371b31b3a43823c755398c48c9966db4",
-                "reference": "35b19404371b31b3a43823c755398c48c9966db4",
+                "url": "https://api.github.com/repos/php-fig/http-message-util/zipball/9d94dc0154230ac39e5bf89398b324a86f63f765",
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 || ^7.0",
-                "psr/http-message": "^1.0"
+                "php": "^5.3 || ^7.0 || ^8.0"
+            },
+            "suggest": {
+                "psr/http-message": "The package containing the PSR-7 interfaces"
             },
             "type": "library",
             "extra": {
@@ -109,7 +111,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Utility classes and constants for use with PSR-7 (psr/http-message)",
@@ -121,7 +123,11 @@
                 "request",
                 "response"
             ],
-            "time": "2018-11-19T16:19:58+00:00"
+            "support": {
+                "issues": "https://github.com/php-fig/http-message-util/issues",
+                "source": "https://github.com/php-fig/http-message-util/tree/1.1.5"
+            },
+            "time": "2020-11-24T22:02:12+00:00"
         },
         {
             "name": "illuminate/container",
@@ -334,6 +340,78 @@
             "time": "2019-08-11T12:48:29+00:00"
         },
         {
+            "name": "joomla/application",
+            "version": "1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/application.git",
+                "reference": "2a2fee9fa2ebb07c0d28da07f6e4ea3c56b77d16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/application/zipball/2a2fee9fa2ebb07c0d28da07f6e4ea3c56b77d16",
+                "reference": "2a2fee9fa2ebb07c0d28da07f6e4ea3c56b77d16",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/input": "^1.2",
+                "joomla/registry": "^1.4.5|^2.0",
+                "php": "^5.3.10|^7.0|^8.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "joomla/coding-standards": "^2.0@alpha",
+                "joomla/event": "^1.2",
+                "joomla/session": "^1.2.1",
+                "joomla/test": "^1.1",
+                "joomla/uri": "^1.1",
+                "phpunit/phpunit": "^4.8.35|^5.4.3|^6.0|^7.0|^8.0",
+                "symfony/phpunit-bridge": "^3.4.26|^4.1.12|^4.2.7|^5.0",
+                "symfony/polyfill-php72": "^1.5"
+            },
+            "suggest": {
+                "joomla/session": "To use AbstractWebApplication with session support, install joomla/session",
+                "joomla/uri": "To use AbstractWebApplication, install joomla/uri"
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Application\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla Application Package",
+            "homepage": "https://github.com/joomla-framework/application",
+            "keywords": [
+                "application",
+                "framework",
+                "joomla"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/application/issues",
+                "source": "https://github.com/joomla-framework/application/tree/1.9.3"
+            },
+            "funding": [
+                {
+                    "url": "https://community.joomla.org/sponsorship-campaigns.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/joomla",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-25T17:10:25+00:00"
+        },
+        {
             "name": "joomla/database",
             "version": "1.6.0",
             "source": {
@@ -386,6 +464,336 @@
                 "joomla"
             ],
             "time": "2018-06-30T23:43:04+00:00"
+        },
+        {
+            "name": "joomla/filter",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/filter.git",
+                "reference": "09733d70db6c6d91e53e0e0d0fcde9b8638175c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/filter/zipball/09733d70db6c6d91e53e0e0d0fcde9b8638175c4",
+                "reference": "09733d70db6c6d91e53e0e0d0fcde9b8638175c4",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/string": "~1.3|~2.0",
+                "php": "^5.3.10|~7.0|^8.0"
+            },
+            "require-dev": {
+                "joomla/coding-standards": "~2.0@alpha",
+                "joomla/language": "~1.3",
+                "phpunit/phpunit": "^4.8.35|^5.4.3|~6.0"
+            },
+            "suggest": {
+                "joomla/language": "Required only if you want to use `OutputFilter::stringURLSafe`."
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla Filter Package",
+            "homepage": "https://github.com/joomla-framework/filter",
+            "keywords": [
+                "filter",
+                "framework",
+                "joomla"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/filter/issues",
+                "source": "https://github.com/joomla-framework/filter/tree/1.4.4"
+            },
+            "funding": [
+                {
+                    "url": "https://community.joomla.org/sponsorship-campaigns.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/joomla",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-29T12:14:25+00:00"
+        },
+        {
+            "name": "joomla/input",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/input.git",
+                "reference": "a89927d412cdc8172889e3e0e3e66a134f367be1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/input/zipball/a89927d412cdc8172889e3e0e3e66a134f367be1",
+                "reference": "a89927d412cdc8172889e3e0e3e66a134f367be1",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/filter": "~1.0",
+                "php": "^5.3.10|~7.0"
+            },
+            "require-dev": {
+                "joomla/coding-standards": "~2.0@alpha",
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "^4.8.35|^5.4.3|~6.0"
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Input\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla Input Package",
+            "homepage": "https://github.com/joomla-framework/input",
+            "keywords": [
+                "framework",
+                "input",
+                "joomla"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/input/issues",
+                "source": "https://github.com/joomla-framework/input/tree/1.4.0"
+            },
+            "time": "2019-06-15T22:13:58+00:00"
+        },
+        {
+            "name": "joomla/registry",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/registry.git",
+                "reference": "299ea7651f402ddcc6f50308c98a2057e05f1856"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/registry/zipball/299ea7651f402ddcc6f50308c98a2057e05f1856",
+                "reference": "299ea7651f402ddcc6f50308c98a2057e05f1856",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/utilities": "^2.0",
+                "php": "^7.2.5|~8.0.0|~8.1.0"
+            },
+            "conflict": {
+                "symfony/yaml": "<3.4"
+            },
+            "require-dev": {
+                "joomla/coding-standards": "^3.0@dev",
+                "phpunit/phpunit": "^8.5|^9.0",
+                "symfony/yaml": "^3.4|^4.4|^5.0"
+            },
+            "suggest": {
+                "ext-json": "ext-json is needed for JSON support",
+                "ext-simplexml": "ext-simplexml is needed for XML support",
+                "symfony/yaml": "Install symfony/yaml if you require YAML support."
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Registry\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla Registry Package",
+            "homepage": "https://github.com/joomla-framework/registry",
+            "keywords": [
+                "framework",
+                "joomla",
+                "registry"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/registry/issues",
+                "source": "https://github.com/joomla-framework/registry/tree/2.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://community.joomla.org/sponsorship-campaigns.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/joomla",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-03-02T14:13:06+00:00"
+        },
+        {
+            "name": "joomla/string",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/string.git",
+                "reference": "bcdb8d45ad3953bf3cfc2b9577288823cab381b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/string/zipball/bcdb8d45ad3953bf3cfc2b9577288823cab381b9",
+                "reference": "bcdb8d45ad3953bf3cfc2b9577288823cab381b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|~8.0.0|~8.1.0",
+                "symfony/deprecation-contracts": "^2.1"
+            },
+            "conflict": {
+                "doctrine/inflector": "<1.2"
+            },
+            "require-dev": {
+                "doctrine/inflector": "^1.2",
+                "joomla/coding-standards": "^3.0@dev",
+                "joomla/test": "^2.0.1",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "suggest": {
+                "doctrine/inflector": "To use the string inflector",
+                "ext-mbstring": "For improved processing"
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/phputf8/utf8.php",
+                    "src/phputf8/ord.php",
+                    "src/phputf8/str_ireplace.php",
+                    "src/phputf8/str_pad.php",
+                    "src/phputf8/str_split.php",
+                    "src/phputf8/strcasecmp.php",
+                    "src/phputf8/strcspn.php",
+                    "src/phputf8/stristr.php",
+                    "src/phputf8/strrev.php",
+                    "src/phputf8/strspn.php",
+                    "src/phputf8/trim.php",
+                    "src/phputf8/ucfirst.php",
+                    "src/phputf8/ucwords.php",
+                    "src/phputf8/utils/ascii.php",
+                    "src/phputf8/utils/validation.php"
+                ],
+                "psr-4": {
+                    "Joomla\\String\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla String Package",
+            "homepage": "https://github.com/joomla-framework/string",
+            "keywords": [
+                "framework",
+                "joomla",
+                "string"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/string/issues",
+                "source": "https://github.com/joomla-framework/string/tree/2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://community.joomla.org/sponsorship-campaigns.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/joomla",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-15T12:47:17+00:00"
+        },
+        {
+            "name": "joomla/utilities",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/utilities.git",
+                "reference": "ab1660fd22184700306b932c39410ba955dc82e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/utilities/zipball/ab1660fd22184700306b932c39410ba955dc82e1",
+                "reference": "ab1660fd22184700306b932c39410ba955dc82e1",
+                "shasum": ""
+            },
+            "require": {
+                "joomla/string": "^2.0",
+                "php": "^7.2.5|~8.0.0|~8.1.0"
+            },
+            "require-dev": {
+                "joomla/coding-standards": "^3.0@dev",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Utilities\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Joomla Utilities Package",
+            "homepage": "https://github.com/joomla-framework/utilities",
+            "keywords": [
+                "framework",
+                "joomla",
+                "utilities"
+            ],
+            "support": {
+                "issues": "https://github.com/joomla-framework/utilities/issues",
+                "source": "https://github.com/joomla-framework/utilities/tree/2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://community.joomla.org/sponsorship-campaigns.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/joomla",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-15T11:29:34+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -551,21 +959,21 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
-                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0",
-                "psr/http-message": "^1.0"
+                "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
             "extra": {
@@ -585,7 +993,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for PSR-7 HTTP message factories",
@@ -599,29 +1007,32 @@
                 "request",
                 "response"
             ],
-            "time": "2019-04-30T12:38:16+00:00"
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:10:41+00:00"
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -649,7 +1060,10 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
+            },
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -759,16 +1173,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
-                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
                 "shasum": ""
             },
             "require": {
@@ -777,7 +1191,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -792,7 +1206,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for logging libraries",
@@ -802,7 +1216,10 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-20T15:27:04+00:00"
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -854,24 +1271,24 @@
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "2.0.5",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7.0",
-                "satooshi/php-coveralls": ">=1.0"
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
             },
             "type": "library",
             "autoload": {
@@ -890,39 +1307,48 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2016-02-11T07:05:27+00:00"
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "slim/psr7",
-            "version": "0.4.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim-Psr7.git",
-                "reference": "d312896b7cd4aca7d4b86b64acdfcb5cc3da758f"
+                "reference": "72d2b2bac94ab4575d369f605dbfafbe168d3163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim-Psr7/zipball/d312896b7cd4aca7d4b86b64acdfcb5cc3da758f",
-                "reference": "d312896b7cd4aca7d4b86b64acdfcb5cc3da758f",
+                "url": "https://api.github.com/repos/slimphp/Slim-Psr7/zipball/72d2b2bac94ab4575d369f605dbfafbe168d3163",
+                "reference": "72d2b2bac94ab4575d369f605dbfafbe168d3163",
                 "shasum": ""
             },
             "require": {
-                "fig/http-message-util": "^1.1",
-                "php": "^7.1",
+                "fig/http-message-util": "^1.1.5",
+                "php": "^7.4 || ^8.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
-                "ralouphie/getallheaders": "^2"
+                "ralouphie/getallheaders": "^3.0",
+                "symfony/polyfill-php80": "^1.26"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "adriansuter/php-autoload-override": "^1.3",
                 "ext-json": "*",
-                "http-interop/http-factory-tests": "^0.5.0",
-                "php-http/psr7-integration-tests": "dev-master",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "^6.0|^7.0",
-                "squizlabs/php_codesniffer": "^3.3"
+                "http-interop/http-factory-tests": "^0.9.0",
+                "php-http/psr7-integration-tests": "1.1",
+                "phpspec/prophecy": "^1.15",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
             "autoload": {
@@ -963,7 +1389,11 @@
                 "psr-7",
                 "psr7"
             ],
-            "time": "2019-08-02T17:06:08+00:00"
+            "support": {
+                "issues": "https://github.com/slimphp/Slim-Psr7/issues",
+                "source": "https://github.com/slimphp/Slim-Psr7/tree/1.6.1"
+            },
+            "time": "2023-04-17T16:02:20+00:00"
         },
         {
             "name": "slim/slim",
@@ -1055,6 +1485,73 @@
             "time": "2019-08-01T16:11:29+00:00"
         },
         {
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
+                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.5-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:53:40+00:00"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.12.0",
             "source": {
@@ -1112,6 +1609,89 @@
                 "shim"
             ],
             "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.27.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
+                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.27-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.27.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-11-03T14:55:06+00:00"
         },
         {
             "name": "symfony/translation",
@@ -1254,5 +1834,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
